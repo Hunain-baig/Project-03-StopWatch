@@ -24,8 +24,8 @@ function reset() {
 
   document.getElementById("hr").innerHTML = "00:";
   document.getElementById("min").innerHTML = "00:";
-  document.getElementById("count").innerHTML = "00:";
-  document.getElementById("sec").innerHTML = "00";
+  document.getElementById("sec").innerHTML = "00:";
+  document.getElementById("count").innerHTML = "00";
 }
 
 function stopwatch() {
@@ -69,11 +69,11 @@ function stopwatch() {
       countString = "0" + countString;
     }
 
-    document.getElementById("hr").innerHTML = hrString;
+    document.getElementById("hr").innerHTML = hrString + ":";
 
-    document.getElementById("min").innerHTML = minString;
+    document.getElementById("min").innerHTML = minString + ":";
 
-    document.getElementById("sec").innerHTML = secString;
+    document.getElementById("sec").innerHTML = secString + ":";
 
     document.getElementById("count").innerHTML = countString;
 
